@@ -1,27 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    padding-top: 70px;
 }
-
 
 .navbar {
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #f8f9fa;
 }
 
-.navbar .navbar-brand {
-    color: #fff;
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: #333;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #fff;
     margin-right: 20px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #ddd;
+    color: #007bff;
+}
+
+.navbar-toggler {
+    padding: .25rem 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 
 .rounded-circle {
@@ -31,26 +43,29 @@ body {
     border-radius: 50% !important;
 }
 
-#sobre {
-    background-color: #e9ecef;
+#sobre,
+#projetos,
+#contato {
     color: #343a40;
     padding: 2rem 0;
+}
+
+#sobre {
+    background-color: #e9ecef;
 }
 
 #projetos {
     background-color: #f8f9fa;
-    color: #343a40;
-    padding: 2rem 0;
 }
 
 #contato {
     background-color: #d1e7dd;
-    color: #343a40;
-    padding: 2rem 0;
 }
 
 @media (min-width: 768px) {
-    #sobre, #projetos, #contato {
+    #sobre,
+    #projetos,
+    #contato {
         padding: 4rem 0;
     }
 }
