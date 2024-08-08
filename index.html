@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Home</title>
+  <head>
+    <title>Marcus S Costa</title>
     <!-- Adicionando o arquivo CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
 
-<body>
+  <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded fixed-top">
-        <a class="navbar-brand" href="#">
-            <i class="fas fa-home"></i> Meu Portfólio
+    <ul class="navbar-nav ml-auto centered-nav"></ul>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded fixed-top"
+    >
+      <div class="container d-flex justify-content-center navbar-content">
+        <a class="navbar-brand icon-margin" href="#">
+          <i class="fas fa-home"></i>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#sobre">Sobre <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projetos">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ml-auto centered-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#sobre"
+                >Sobre <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-
     <div id="sobre" class="container py-5" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
@@ -42,41 +60,56 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-4 text-center">
-                <img src="avatar.jpeg" alt="Avatar" class="img-fluid rounded-circle mb-3">
+                <img src="avatar.jpeg" alt="Avatar" class="img-fluid rounded-circle mb-3" />
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <p>
-                    Desenvolvedor experiente em aplicações, arquitetura de sistemas, bancos de dados, nuvem, testes,
-                    machine learning e tecnologias open source.
-                </p>
+                <div>
+                    <h2>Consultor de TI</h2>
+                    <p>
+                        Consultor de Tecnologia da Informação com vasta experiência em arquitetura de sistemas, bancos de dados, computação em nuvem, testes, machine learning e tecnologias open source.
+                    </p>
+                </div>
+                <div>
+                    <h2>Especialista em Soluções</h2>
+                    <p>
+                        Especializado em fornecer soluções inovadoras e estratégicas para atender às necessidades de negócios.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="projetos" class="container py-5 bg-light text-center" data-aos="fade-down">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h1>Projetos</h1>
-                <p>Em construção...</p>
-            </div>
+    <div
+      id="projetos"
+      class="container py-5 bg-light text-center"
+      data-aos="fade-down"
+    >
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1>Projetos</h1>
+          <p>Em construção...</p>
         </div>
+      </div>
     </div>
 
     <div id="contato" class="container py-5 text-center" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h1>Contato</h1>
-                <p>Como entrar em contato comigo...</p>
-                <a href="https://github.com/CusCusCxs" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/marcus-costa-986060156/" target="_blank"><i
-                        class="fab fa-linkedin fa-2x"></i></a>
-                <!-- Adicione mais ícones conforme necessário -->
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1>Contato</h1>
+          <p>Como entrar em contato comigo...</p>
+          <a href="https://github.com/CusCusCxs" target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/marcus-costa-986060156/"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <!-- Adicione mais ícones conforme necessário -->
         </div>
+      </div>
     </div>
-</body>
-<script>
+  </body>
+  <script>
     AOS.init();
-</script>
-
+  </script>
 </html>

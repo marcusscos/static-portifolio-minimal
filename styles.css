@@ -14,9 +14,17 @@ body {
     background-color: #f8f9fa;
 }
 
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
 .navbar .navbar-brand,
 .navbar .navbar-nav .nav-link {
     color: #333;
+    text-decoration: none;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -36,6 +44,13 @@ body {
     border-radius: .25rem;
 }
 
+.centered-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .rounded-circle {
     width: 200px;
     height: 200px;
@@ -43,14 +58,19 @@ body {
     border-radius: 50% !important;
 }
 
+.icon-margin {
+    margin-right: 20px;
+}
+
+.container {
+    flex-grow: 1;
+}
+
 #sobre,
 #projetos,
 #contato {
     color: #343a40;
     padding: 2rem 0;
-}
-
-#sobre {
     background-color: #e9ecef;
 }
 
