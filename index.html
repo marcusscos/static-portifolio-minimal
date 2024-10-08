@@ -1,115 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Marcus S Costa</title>
-    <!-- Adicionando o arquivo CSS -->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-  </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvedor Full Stack - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <ul class="navbar-nav ml-auto centered-nav"></ul>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-3 mb-5 bg-white rounded fixed-top"
-    >
-      <div class="container d-flex justify-content-center navbar-content">
-        <a class="navbar-brand icon-margin" href="#">
-          <i class="fas fa-home"></i>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto centered-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#sobre"
-                >Sobre <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="sobre" class="container py-5" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h1>Sobre Mim</h1>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4 text-center">
-                <img src="avatar.jpeg" alt="Avatar" class="img-fluid rounded-circle mb-3" />
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div>
-                    <h2>Consultor de TI</h2>
-                    <p>
-                        Consultor de Tecnologia da Informação com vasta experiência em arquitetura de sistemas, bancos de dados, computação em nuvem, testes, machine learning e tecnologias open source.
-                    </p>
+    <main>
+        <section id="about">
+            <h1>Desenvolvedor Full Stack</h1>
+            <p>Especialista em desenvolvimento de aplicações, arquitetura de sistemas e tecnologias de nuvem.</p>
+            <a href="#skills" class="cta-button">
+                Explore minhas habilidades
+                <i data-lucide="chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i data-lucide="code"></i>
+                    <h3>Desenvolvimento de Aplicações</h3>
+                    <p>Experiência em várias linguagens e frameworks</p>
                 </div>
-                <div>
-                    <h2>Especialista em Soluções</h2>
-                    <p>
-                        Especializado em fornecer soluções inovadoras e estratégicas para atender às necessidades de negócios.
-                    </p>
+                <div class="skill-card">
+                    <i data-lucide="database"></i>
+                    <h3>Gerenciamento de Bancos de Dados</h3>
+                    <p>Proficiente em SQL e NoSQL</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="cloud"></i>
+                    <h3>Tecnologias de Nuvem</h3>
+                    <p>AWS, Azure, Google Cloud</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="terminal"></i>
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Docker, Kubernetes</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="cpu"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Conhecimentos básicos em ML e IA</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="shield"></i>
+                    <h3>Segurança</h3>
+                    <p>Práticas de segurança em aplicações e infraestrutura</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div
-      id="projetos"
-      class="container py-5 bg-light text-center"
-      data-aos="fade-down"
-    >
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <h1>Projetos</h1>
-          <p>Em construção...</p>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div id="contato" class="container py-5 text-center" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <h1>Contato</h1>
-          <p>Como entrar em contato comigo...</p>
-          <a href="https://github.com/CusCusCxs" target="_blank"
-            ><i class="fab fa-github fa-2x"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/marcus-costa-986060156/"
-            target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
-          <!-- Adicione mais ícones conforme necessário -->
-        </div>
-      </div>
-    </div>
-  </body>
-  <script>
-    AOS.init();
-  </script>
+        <section id="experience">
+            <h2>Experiência</h2>
+            <div class="experience-content">
+                <p>
+                    Experiência em criar arquiteturas e ambientes utilizando tecnologias open source, 
+                    tanto em ambientes físicos quanto em máquinas virtuais na nuvem. Especializado em 
+                    lidar com escalabilidade e segurança, desde micro serviços até grandes monólitos.
+                </p>
+                <ul>
+                    <li>Desenvolvimento de aplicações de larga escala</li>
+                    <li>Implementação de arquiteturas de microserviços</li>
+                    <li>Otimização de performance e escalabilidade</li>
+                    <li>Integração de sistemas e APIs</li>
+                    <li>Implementação de práticas de DevOps e CI/CD</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Como entrar em contato comigo...</p>
+                    <div class="social-links">
+                        <a href="https://github.com/CusCusCxs" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marcus-costa-986060156/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 </html>
