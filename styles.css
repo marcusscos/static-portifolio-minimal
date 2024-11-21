@@ -86,11 +86,13 @@ p {
 }
 
 .snap-container {
+    -webkit-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
 }
 section {
+    -webkit-scroll-snap-align: start;
     scroll-snap-align: start;
     height: 100vh;
 }
