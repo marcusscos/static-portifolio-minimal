@@ -85,6 +85,16 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -155,6 +165,7 @@ p {
 
 .social-links {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
 }
