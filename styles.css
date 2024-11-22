@@ -211,6 +211,25 @@ button:hover {
     background-color: var(--accent-hover);
 }
 
+footer {
+    background-color: var(--primary-bg);
+    color: var(--text-muted);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--secondary-bg);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -222,5 +241,13 @@ button:hover {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer p {
+        font-size: 0.75rem;
     }
 }
