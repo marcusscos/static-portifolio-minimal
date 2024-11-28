@@ -1,10 +1,10 @@
 :root {
-    --primary-bg: #1a202c;
-    --secondary-bg: #2d3748;
-    --text-color: #ffffff;
-    --text-muted: #a0aec0;
-    --accent-color: #4299e1;
-    --accent-hover: #3182ce;
+    --primary-bg: #1a202c; /* Cor de fundo principal escura */
+    --secondary-bg: #2d3748; /* Cor de fundo secundária escura */
+    --text-color: #e2e8f0; /* Cor do texto clara */
+    --text-muted: #a0aec0; /* Cor do texto secundário */
+    --accent-color: #4299e1; /* Cor de destaque */
+    --accent-hover: #3182ce; /* Cor de destaque ao passar o mouse */
 }
 
 * {
@@ -20,6 +20,10 @@ html, body {
     background: linear-gradient(to bottom right, var(--primary-bg), var(--secondary-bg));
     min-height: 100vh;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -27,11 +31,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(26, 32, 44, 0.9);
+    background-color: rgba(26, 32, 44, 0.9); /* Fundo do header escuro */
     backdrop-filter: blur(4px);
     z-index: 1000;
 }
-
 nav ul {
     display: flex;
     justify-content: center;
@@ -57,7 +60,13 @@ nav ul li a:hover {
 }
 
 main {
-    scroll-snap-type: y mandatory;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: var(--primary-bg); /* Alterado para usar a variável de cor */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     overflow-y: scroll;
     height: 100vh;
 }
@@ -74,17 +83,25 @@ section {
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.25rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 p {
     font-size: 1.125rem;
     color: var(--text-muted);
     margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.mermaid {
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 .cta-button {
@@ -131,6 +148,10 @@ p {
     font-size: 0.875rem;
 }
 
+.skill-card a:visited {
+    color: var(--accent-hover);
+}
+
 .experience-content {
     background-color: var(--secondary-bg);
     padding: 1.5rem;
@@ -166,7 +187,21 @@ p {
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
+.tech-box {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.tech-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+.tech-box li {
+    margin-bottom: 10px;
+}
+
+
+social-links a:hover {
     color: var(--accent-hover);
 }
 
@@ -229,8 +264,25 @@ footer p {
     margin: 0.5rem 0;
     font-size: 0.875rem;
 }
-
+.mermaid {
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
 @media (max-width: 768px) {
+    header {
+        padding: 0.7rem;
+        height: 5%; /* Reduzir a altura em 30% */        
+    }
+
+    nav ul {
+        padding: 0.7rem; /* Reduzir o padding em 30% */
+    }
+
+    nav ul li a {
+        font-size: 0.6125rem; /* Reduzir o tamanho da fonte em 30% */
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -241,6 +293,10 @@ footer p {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mermaid {
+        font-size: 3rem; /* Ajuste o tamanho da fonte conforme necessário */
     }
 
     footer {

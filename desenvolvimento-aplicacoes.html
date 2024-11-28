@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Aplicações</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#skills">Habilidades</a></li>
+                <li><a href="index.html#experience">Experiência</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="development">
+            <h1>Desenvolvimento de Aplicações</h1>
+            <p>O desenvolvimento de aplicações envolve a criação de software que atende a necessidades específicas dos usuários. Isso inclui desde a concepção da ideia, passando pelo design, codificação, testes e manutenção.</p>
+            <h2>Tecnologias Utilizadas</h2>
+            <div class="tech-box">
+                <ul>
+                    <li><i data-lucide="code"></i> JavaScript, HTML, CSS</li>
+                    <li><i data-lucide="layers"></i> Frameworks: React, Angular, Vue</li>
+                    <li><i data-lucide="server"></i> Backend: Node.js, Django, Java</li>
+                    <li><i data-lucide="database"></i> Bancos de Dados: MySQL, PostgreSQL, MongoDB</li>
+                    <li><i data-lucide="box"></i> Ferramentas de DevOps: Docker, Kubernetes, Jenkins</li>
+                </ul>
+            </div>
+            <h2>Exemplo Fluxo Microserviços Ecomm</h2>
+            <div class="mermaid">
+                graph TB;
+                    Cliente[👤 Cliente] -->|Requisição de Compra| Gateway_API[🌐 Gateway API];
+                    Gateway_API -->|🔒 Autenticação| Servico_Auth[🔑 Auth];
+                    Servico_Auth -->|Verifica| BD_Auth[🗄️ BD Auth];
+                    Gateway_API -->|📦 Produtos| Servico_Catalogo[📦 Catálogo];
+                    Servico_Catalogo -->|Consulta| BD_Catalogo[🗄️ BD Catálogo];
+                    Gateway_API -->|📝 Registrar Compra| Servico_Pedido[🛒 Pedido];
+                    Servico_Pedido -->|Registrar| BD_Pedido[🗄️ BD Pedido];
+                    Servico_Pedido -->|Confirmação| Cliente;
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Marcus Costa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
