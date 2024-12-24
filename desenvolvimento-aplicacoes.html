@@ -33,24 +33,29 @@
             <h2>Tecnologias Utilizadas</h2>
             <div class="tech-box">
                 <ul>
-                    <li><i data-lucide="code"></i> JavaScript, HTML, CSS</li>
-                    <li><i data-lucide="layers"></i> Frameworks: React, Angular, Vue</li>
-                    <li><i data-lucide="server"></i> Backend: Node.js, Django, Java</li>
+                    <li><i data-lucide="code"></i> Front-end: JavaScript(React, Angular, Vue), HTML, CSS</li>
+                    <li><i data-lucide="server"></i> Backend: Node.js(NestJS), Java(Spring Boot)</li>
                     <li><i data-lucide="database"></i> Bancos de Dados: MySQL, PostgreSQL, MongoDB</li>
                     <li><i data-lucide="box"></i> Ferramentas de DevOps: Docker, Kubernetes, Jenkins</li>
                 </ul>
             </div>
             <h2>Exemplo Fluxo Microserviços Ecomm</h2>
             <div class="mermaid">
-                graph TB;
-                    Cliente[👤 Cliente] -->|Requisição de Compra| Gateway_API[🌐 Gateway API];
-                    Gateway_API -->|🔒 Autenticação| Servico_Auth[🔑 Auth];
-                    Servico_Auth -->|Verifica| BD_Auth[🗄️ BD Auth];
-                    Gateway_API -->|📦 Produtos| Servico_Catalogo[📦 Catálogo];
-                    Servico_Catalogo -->|Consulta| BD_Catalogo[🗄️ BD Catálogo];
-                    Gateway_API -->|📝 Registrar Compra| Servico_Pedido[🛒 Pedido];
-                    Servico_Pedido -->|Registrar| BD_Pedido[🗄️ BD Pedido];
-                    Servico_Pedido -->|Confirmação| Cliente;
+                graph TD;
+                    Cliente[1. 👤 Cliente] -->|2. Requisição de Compra| Gateway_API[3. 🌐 Gateway API];
+                    Gateway_API -->|4. 🔒 Autenticação| Servico_Auth[5. 🔑 Auth];
+                    Servico_Auth -->|6. Verifica Credenciais| BD_Auth[7. 🗄️ BD Auth];
+                    BD_Auth -->|8. Resposta Credenciais| Servico_Auth;
+                    Servico_Auth -->|9. Gera Token JWT| Token[10. 🔑 JWT Token];
+                    Token -->|11. Valida Token| Gateway_API;
+                    Gateway_API -->|12. 📦 Consulta Produtos| Servico_Catalogo[13. 📦 Catálogo];
+                    Servico_Catalogo -->|14. Consulta| BD_Catalogo[15. 🗄️ BD Catálogo];
+                    BD_Catalogo -->|16. Resposta Produtos| Servico_Catalogo;
+                    Servico_Catalogo -->|17. Resposta Produtos| Gateway_API;
+                    Gateway_API -->|18. 📝 Registrar Compra| Servico_Pedido[19. 🛒 Pedido];
+                    Servico_Pedido -->|20. Registrar| BD_Pedido[21. 🗄️ BD Pedido];
+                    BD_Pedido -->|22. Confirmação Registro| Servico_Pedido;
+                    Servico_Pedido -->|23. Confirmação| Cliente;
             </div>
         </section>
     </main>
