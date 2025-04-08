@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png">
 </head>
+
 <body>
     <header>
         <nav>
@@ -71,8 +73,8 @@
             <h2>Experiência</h2>
             <div class="experience-content">
                 <p>
-                    Experiência em criar arquiteturas e ambientes utilizando tecnologias open source, 
-                    tanto em ambientes físicos quanto em máquinas virtuais na nuvem. Especializado em 
+                    Experiência em criar arquiteturas e ambientes utilizando tecnologias open source,
+                    tanto em ambientes físicos quanto em máquinas virtuais na nuvem. Especializado em
                     lidar com escalabilidade e segurança, desde micro serviços até grandes monólitos.
                 </p>
                 <ul>
@@ -91,10 +93,11 @@
                 <div class="contact-info">
                     <p>Como entrar em contato comigo...</p>
                     <div class="social-links">
-                            <a href="https://github.com/marcusscos" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/marcusscos" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github fa-2x"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/marcus-segalotto-costa-986060156/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/marcus-segalotto-costa-986060156/" target="_blank"
+                            rel="noopener noreferrer">
                             <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </div>
@@ -105,7 +108,10 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Marcus Costa. Todos os direitos reservados.</p>
+            <p>© 2019–<span id="year"></span> Marcus S. Costa. Nenhuma licença (todos os direitos reservados).</p>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 
@@ -113,4 +119,5 @@
         lucide.createIcons();
     </script>
 </body>
+
 </html>
